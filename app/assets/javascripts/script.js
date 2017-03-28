@@ -13,7 +13,7 @@
     // -------
 
     // Height to sections
-    $('.main > section').css('min-height', $(window).height());
+    $('.main > section').css('min-height', Math.round($(window).height()*0.5));
     // --------
 
     // Mini slide
