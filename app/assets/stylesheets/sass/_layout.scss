@@ -297,7 +297,7 @@ a {
 
 .sec-form-textarea {
   @include light;
-  @include scale(font-size, 14px);
+  @include scale(font-size, 12px);
   @include scale(margin, 0 0 15px);
   @include scale(padding, 5px 20px);
   background: $color-white;
@@ -526,3 +526,4 @@ a {
     }
   }
 }
+
