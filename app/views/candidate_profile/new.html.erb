@@ -19,8 +19,6 @@
       <%= f.text_field :activity, class: "sec-form-input" %>
     </div>
 
-    <%= f.text_field :studies, class: "sec-form-input label-tag", placeholder: "Domeniul în care activezi sau în care îți faci studiile" %>
-
     <div class="sec-form-textarea">
       <%= f.label :motivation do %>
         <p class="label-tag-with-info">Ce te motivează să aplici la acest curs?</p>
@@ -30,13 +28,14 @@
     </div>
 
     <div class="sec-form-textarea">
-      <%= f.label :voluntariat do %>
-        <p class="label-tag-with-info">Ai activități de voluntariat?</p>
-        <p class="info-label-tag">Unul din obiectivele cursului e de a te ajuta să dezvolți competențe tehnice care îți vor permite să dezvolți soluții pentru probleme sociale din domeniul tău de activitate sau voluntariat.</p>
+      <%= f.label :activity do %>
+        <p class="label-tag-with-info">Specifică mai jos mărimea pe care o porţi la maiou. </p>
+        <%= f.select :activity, ['XS', 'S', 'M', 'L', 'XL']%>
       <% end %>
-      <%= f.text_area :voluntariat %>
+      <%= f.text_area :activity %>
     </div>
 
+    
     <!-- <div class="sec-form-textarea">
       <%#= f.label :project_idea do %>
         <p class="label-tag-with-info">Ai o idee clară de proiect, care se încadrează în descrierea pe care am dat-o noi și pe care o vei implementa în timpul cursului?</p>
@@ -44,19 +43,6 @@
       <%# end %>
       <%#= f.text_area :project_idea %>
     </div> -->
-
-    <div class="sec-form-textarea">
-      <p class="label-tag"><%= f.label :teamwork, "Ai experiență de lucru în echipă? Te rugăm să o descrii mai jos." %></p>
-      <%= f.text_area :teamwork %>
-    </div>
-
-    <div class="sec-form-textarea">
-      <%= f.label :last_skill do %>
-        <p class="label-tag-with-info">Cum îți autoevaluezi capacitatea de a învăța în autonomie?</p>
-        <p class="info-label-tag">Care a fost ultima problemă tehnică cu care te-ai confruntat și cum ai rezolvat-o? Care este ultimul lucru pe care l-ai învățat singură și care au fost resursele pe care le-ai folosit?</p>
-      <% end %>
-      <%= f.text_area :last_skill %>
-    </div>
 
     <div>
       <%= f.label :agreement do %>
