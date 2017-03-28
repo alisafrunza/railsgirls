@@ -28,14 +28,13 @@
     </div>
 
     <div class="sec-form-textarea">
-      <%= f.label :activity do %>
+      <%= f.label :project_idea do %>
         <p class="label-tag-with-info">Specifică mai jos mărimea pe care o porţi la maiou. </p>
-        <%= f.select :activity, ['XS', 'S', 'M', 'L', 'XL']%>
       <% end %>
-      <%= f.text_area :activity %>
+      <%= f.text_area :project_idea, placeholder: "('XS', 'S', 'M', 'L', 'XL')"%>
     </div>
 
-    
+
     <!-- <div class="sec-form-textarea">
       <%#= f.label :project_idea do %>
         <p class="label-tag-with-info">Ai o idee clară de proiect, care se încadrează în descrierea pe care am dat-o noi și pe care o vei implementa în timpul cursului?</p>
