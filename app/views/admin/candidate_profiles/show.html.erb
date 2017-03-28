@@ -21,7 +21,7 @@
     <div class="panel panel-default">
       <table class="table table-striped">
         <tbody>
-          <% %w(email phone city activity studies age).each do |item| %>
+          <% %w(email phone city activity age).each do |item| %>
             <tr>
               <td><%= item.titleize %></td>
               <td><%= @candidate_profile.public_send(item) %></td>
@@ -36,9 +36,7 @@
 
 <div class="row">
   <% %w(motivation
-        voluntariat
-        teamwork
-        last_skill).each do |item| %>
+        project_idea).each do |item| %>
 
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="panel panel-default">
