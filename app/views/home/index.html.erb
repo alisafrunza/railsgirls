@@ -5,7 +5,7 @@
   <div class="sec-header-period">
     <p><strong>Editia III</strong></p>
     <p> 13 MAI - 27 MAI 2017</p>
-    <%= link_to "Aplică acum", new_candidate_profile_path, class: "btn btn-apply"%>
+    <%= link_to "Aplică acum", "", class: "btn btn-apply", onclick: "window.alert('Aplicările s-au finisat!');"%>
   </div>
   <br>
   <br>
@@ -117,7 +117,7 @@
   </ul>
 
   <div class="sec-apply-btn">
-    <%= link_to "Aplică", new_candidate_profile_path, class: "btn btn-apply" %>
+    <%= link_to "Aplică", "", class: "btn btn-apply", onclick: "window.alert('Aplicările s-au finisat!');" %>
   </div>
 </section>
 
@@ -133,7 +133,6 @@
 <section class="sec-sponsors" id="Sponsors">
   <h3>Sponsori</h3>
   <div class="sponsors-logo">
-
     <a href="https://www.saltedge.com">
       <%= image_tag 'saltedge-logo.png', alt: 'Saltedge', style: 'margin-left: 80px;', :size => "260x180" %>
     </a>
