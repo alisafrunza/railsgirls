@@ -201,7 +201,7 @@ a {
 
 // Section Contact
 .sec-contact {
-  @include scale(padding, 60px 0);
+  @include scale(padding, 30px 0);
 
   h3 {
     @include light;
@@ -214,7 +214,11 @@ a {
 }
 
 .sec-sponsors {
-  @include scale(padding, 27px 0);
+  @include scale(padding, 60px 0);
+
+  .sponsors-logo {
+    vertical-align: bottom;
+  }
 
   img {
     float: left;
